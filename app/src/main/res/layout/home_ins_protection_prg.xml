@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_screen_item_single_card_ui_ins"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:layout_marginLeft="@dimen/margin_4"
+    android:layout_marginRight="@dimen/margin_4"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="5.0dip"
+    app:cardElevation="3.0dip"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_10"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/ins_linearlayout"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_done_black"
+                    android:padding="@dimen/margin_20"
+                    android:background="@drawable/ic_beenhere_black"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-thin"
+                    android:maxLines="2"
+                    android:text="@string/urbanclap_insurance_protection_program"
+                    android:textColor="@color/black87"
+                    android:textSize="@dimen/text_size_20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:maxLines="2"
+                    android:text="Upto Rs. 10,000 insurance protection with every service request"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/learn_more"
+                    android:textColor="#3F51B5" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

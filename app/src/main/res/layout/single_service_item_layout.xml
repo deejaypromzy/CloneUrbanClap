@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:foreground="?attr/selectableItemBackground"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/home_screen_item_horizontal_card_imageview"
+        android:layout_width="@dimen/margin_93"
+        android:layout_height="@dimen/margin_93"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/round_corners"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/home_screen_item_horizontal_card_service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_14"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="top"
+        android:lineSpacingExtra="2.0dip"
+        android:maxWidth="@dimen/margin_93"
+        android:maxLines="1"
+        android:text="@string/service_list_item"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14sp" tools:targetApi="jelly_bean" />
+<include layout="@layout/vertical_divider"/>
+</LinearLayout>

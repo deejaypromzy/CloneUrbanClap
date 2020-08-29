@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:orientation="vertical">
+
+  <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/custom_toolbar_wedget"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryDarker"
+            android:elevation="@dimen/margin_4"
+            app:title="View Cart"
+            app:titleTextColor="@color/white"
+            android:theme="@style/AppTheme1">
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBar_Layout"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/whhops_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/notfound" />
+
+        <TextView
+            android:textColor="@color/black87"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif-thin"
+            android:text="Whoops, No Item Present in Cart!"
+            android:textSize="@dimen/text_size_20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:maxEms="15"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            android:text="@string/booking_txt"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_home_black"
+            android:padding="@dimen/margin_10"
+            android:drawableTint="@color/black87"/>
+            />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bookASerice_btn"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:text="Book a Service"
+            android:onClick="bookService"
+            android:padding="@dimen/margin_10"
+            android:textColor="@color/white"
+            android:background="@drawable/border_rounded_black"/>
+    </LinearLayout>
+</RelativeLayout>

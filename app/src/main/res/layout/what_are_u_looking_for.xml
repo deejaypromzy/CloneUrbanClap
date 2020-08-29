@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_blue_gradient"
+        android:weightSum="0.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_0"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/tv_what_are_u_looking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What are you looking for"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/windowBackground"
+                    android:textFontWeight="700" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignRight="@id/tv_what_are_u_looking"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_person_black"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_0"
+            android:layout_margin="8dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/single_what_r_u_lookin_for"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+            <include layout="@layout/single_what_r_u_lookin_for"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <include layout="@layout/single_what_r_u_lookin_for"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <include layout="@layout/single_what_r_u_lookin_for" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

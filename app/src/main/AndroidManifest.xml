@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sundram.urbanclapclone">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="preferExternal"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".ViewAllElectricianServices"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ViewAllFullHomeDeepCleaning"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ViewAllKitchenDeepCleaning"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ViewAllCarpetCleaningService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ViewAllBathroomCleaningService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ViewAllSofaCleaningService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ViewAllServiceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Details.SofaCleaningDetails"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ImageViewActivity"></activity>
+        <activity
+            android:name=".GoogleMapWithSearchView"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".ClientDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.appliance.ViewAllRoAndWaterService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.appliance.ViewAllMicrowaveRepair"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.appliance.ViewAllRefrigetorService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.appliance.ViewAllWashingService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.appliance.ViewAllGeyserService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.appliance.ViewAllAcServices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.pestcontrol.ViewAllPestControl"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.pecservice.ViewAllPlumber"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.pecservice.ViewAllCarpenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.pecservice.ViewAllElectrician"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.cleaning.ViewAllHomeCleaning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.cleaning.ViewAllKitchenService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.cleaning.ViewAllCarpetService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SofaCleaning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".viewallserviceactivity.cleaning.ViewAllBathRoomServices"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".viewallserviceactivity.cleaning.ViewAllSofaCleaningServices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyLocationUsingLocationAPI"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RoandWaterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WashingmachineRepair"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".CarpenterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".PECActivity"
+            android:parentActivityName=".DashBoard"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".ServiceListItem"
+            android:parentActivityName=".DashBoard"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".WidgetSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocationOnBoarding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OTPVerification"
+            android:screenOrientation="portrait" />
+        <activity android:name=".viewallserviceactivity.salonathome.ViewAllServiceActivity" />
+        <activity
+            android:name=".MicroWaveRepair"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".RefrigeratorRepair"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity android:name=".AcServiceAndRepair" />
+        <activity
+            android:name=".ApplianceAndEcRepair"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".GyserServiceAndRepair"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PestControl"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlumberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ElectricianActivity"
+            android:parentActivityName=".PECActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".GuranteeActivity"
+            android:parentActivityName=".DashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FullHomeDeepCleaning"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".KitchenCleaningActivity"
+            android:parentActivityName=".ServiceListItem"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".CarpetCleanigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BathroomCleaning"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SalonAtHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/collapsabletoolbar" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".DashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".DashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:parentActivityName=".About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpGeneratorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

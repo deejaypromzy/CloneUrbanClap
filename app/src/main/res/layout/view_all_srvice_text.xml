@@ -1,0 +1,23 @@
+<RelativeLayout android:layout_margin="@dimen/margin_5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/grey_text"
+        android:text="Service type"
+        android:textAllCaps="true"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_white"/>
+
+    <TextView
+        android:id="@+id/heading_tv_text"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_toRightOf="@id/headingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:text="Full arms wax including underarms (Honey), Full legs Wax(Honey)."
+        android:layout_marginStart="@dimen/margin_5" />
+
+</RelativeLayout>

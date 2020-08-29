@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_screen_item_single_card_ui"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginLeft="@dimen/margin_4"
+    android:layout_marginRight="@dimen/margin_4"
+    android:clickable="true"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="5.0dip"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1.1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/service_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxEms="10"
+                        android:fontFamily="sans-serif"
+                        android:maxLines="3"
+                        android:text="Beauty Services at Home" />
+
+                    <LinearLayout
+                        android:padding="@dimen/margin_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/service_name_tv_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Wax"
+                            android:textColor="@color/green_confirm" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | "
+                            android:textColor="@color/green_confirm"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:textAlignment="textStart"
+                            android:id="@+id/service_name_tv_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Facial"
+                            android:textColor="@color/green_confirm"
+                            android:gravity="start" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | "
+                            android:textColor="@color/green_confirm" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:textAlignment="textStart"
+                            android:id="@+id/service_name_tv_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Packages"
+                            android:textColor="@color/green_confirm"
+                            android:gravity="start" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_keyboard_arrow_right_black"
+                    android:shadowColor="@color/grey_txt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_4">
+
+                <ImageView
+                    android:id="@+id/home_screen_service_image"
+                    android:layout_width="150dp"
+                    android:layout_height="97dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Services"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#2196F3" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="that we provide"
+                    android:textColor="#2196F3" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

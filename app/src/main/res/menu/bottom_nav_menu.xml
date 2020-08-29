@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black"
+        android:title="Home"
+         />
+    <item
+        android:id="@+id/action_my_booking"
+        android:enabled="true"
+        android:icon="@drawable/ic_library_books_black"
+        android:title="View Bookings"
+         />
+
+    <item
+        android:id="@+id/action_help_center"
+        android:enabled="true"
+        android:icon="@drawable/ic_help_outline_black"
+        android:title="Help Center"
+         />
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_black"
+        android:title="Profile"
+         />
+</menu>

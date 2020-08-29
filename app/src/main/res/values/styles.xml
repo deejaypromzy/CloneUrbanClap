@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme1" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorAccent">@color/windowBackground</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="@style/AppTheme">
+        <item name="android:windowBackground">@drawable/custom_splash</item>
+    </style>
+
+    <style name="uc_seek_bar.no_padding" parent="@style/uc_seek_bar">
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">@dimen/margin_22</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">@dimen/margin_22</item>
+    </style>
+
+    <style name="uc_seek_bar" parent="@android:style/Widget.DeviceDefault.Light.SeekBar">
+        <item name="android:maxHeight">@dimen/margin_4</item>
+        <item name="android:progressDrawable">@drawable/uc_seek_bar_track</item>
+        <item name="android:minHeight">@dimen/margin_4</item>
+        <item name="android:thumb">@drawable/slider_knob_royal_blue</item>
+    </style>
+
+    <style name="uc_alert_dialog_theme" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="colorControlHighlight">@color/primary</item>
+        <item name="colorControlNormal">#ffe1e1e1</item>
+    </style>
+
+    <style name="collapsabletoolbar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#03A9F4</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black87</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="add_address_theme" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/grey_txt</item>
+        <item name="colorControlHighlight">@color/grey_txt</item>
+        <item name="colorControlNormal">@color/grey_txt_mid_light</item>
+    </style>
+    <!--login_edittext ui-->
+    <style name="login_edittext" parent="@style/AppTheme">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/grey_txt_darkest_dark</item>
+        <item name="android:textColorHint">@color/grey_txt_light</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+    <!--login_edittext ui end-->
+
+    <!--login_edittext ui-->
+    <style name="login_edittext_address_requirememnts" parent="@style/AppTheme">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:textColor">@color/grey_txt_darkest_dark</item>
+        <item name="android:textColorHint">@color/grey_txt_light</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+    <!--login_edittext ui end-->
+
+
+
+    <style name="add_address_til_hint" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/uc_black_54</item>
+    </style>
+
+    <style name="font_regular" parent="AppTheme">
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="add_address_edittext" parent="@style/font_regular">
+        <item name="android:textColor">@color/grey_txt_darkest</item>
+        <item name="android:textColorHint">@color/grey_txt_mid_light</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="proceedButtonStyle">
+        <item name="android:textSize">@dimen/header_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>

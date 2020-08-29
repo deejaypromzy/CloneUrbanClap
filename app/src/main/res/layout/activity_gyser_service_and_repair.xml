@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg_light"
+    tools:context=".GyserServiceAndRepair">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/collapsable__custom_toolbar" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_bg_light"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_blue_gradient"
+                    android:weightSum="0.9">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_0"
+                        android:layout_weight="0.2"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_10">
+
+                            <TextView
+                                android:maxEms="10"
+                                android:id="@+id/tv_what_are_u_looking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="What are you looking for"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:textColor="@color/windowBackground"
+                                android:textFontWeight="700" />
+
+                            <ImageView
+                                android:id="@+id/img_person"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_alignRight="@id/tv_what_are_u_looking"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_person_black"
+                                android:visibility="invisible" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                    <!--perform onclick on these items-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_0"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.7"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="@dimen/margin_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:background="@color/grey_bg_light"
+                            app:cardCornerRadius="@dimen/margin_5"
+                            app:cardElevation="@dimen/margin_10">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout_repair"
+                                android:padding="@dimen/margin_10"
+                                android:background="@drawable/round_corner_active_slots"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:maxEms="16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="AC Repair"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:id="@+id/what_r_u_tv1"/>
+                                <TextView
+                                    android:maxEms="16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Improves water quality and increase efficiency"
+                                    android:layout_below="@id/what_r_u_tv1"
+                                    android:id="@+id/what_r_u_tv1_desc"/>
+
+                                <ImageView
+                                    android:id="@+id/go_one"
+                                    android:padding="@dimen/margin_5"
+                                    android:clickable="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/right_arrow"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignRight="@id/what_r_u_tv1"
+                                    />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="@dimen/margin_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:background="@color/grey_bg_light"
+                            app:cardCornerRadius="@dimen/margin_5"
+                            app:cardElevation="@dimen/margin_10">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout_Service"
+                                android:padding="@dimen/margin_10"
+                                android:background="@drawable/round_corner_active_slots"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="AC Service"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:id="@+id/what_r_u_tv2"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Improves water quality and increase efficiency"
+                                    android:layout_below="@id/what_r_u_tv2"
+                                    android:id="@+id/what_r_u_tv2_desc"/>
+
+                                <ImageView
+                                    android:id="@+id/go_two"
+                                    android:padding="@dimen/margin_5"
+                                    android:clickable="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/right_arrow"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignRight="@id/what_r_u_tv2"
+                                    />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="@dimen/margin_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:background="@color/grey_bg_light"
+                            app:cardCornerRadius="@dimen/margin_5"
+                            app:cardElevation="@dimen/margin_10">
+
+                            <RelativeLayout
+                                android:id="@+id/relativeLayout_UI"
+                                android:padding="@dimen/margin_10"
+                                android:background="@drawable/round_corner_active_slots"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="AC Installation and Uninstallation"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:id="@+id/what_r_u_tv3"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Improves water quality and increase efficiency"
+                                    android:layout_below="@id/what_r_u_tv3"
+                                    android:id="@+id/what_r_u_tv3_desc"/>
+
+                                <ImageView
+                                    android:id="@+id/go_three"
+                                    android:padding="@dimen/margin_5"
+                                    android:clickable="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/right_arrow"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignRight="@id/what_r_u_tv3"
+                                    />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <!--end-->
+                </LinearLayout>
+                <TextView
+                    android:padding="@dimen/margin_10"
+                    android:id="@+id/heading_gurantee_section_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@color/black87"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="@color/yellow"
+                    android:maxEms="10"
+                    android:text="Get your geyser serviced to avoid hair fall and skin dryness, caused due to water hardness"
+                    android:textAlignment="center"/>
+
+                <include
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    layout="@layout/full_filled_section_layout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <TextView
+                    android:padding="@dimen/margin_10"
+                    android:id="@+id/heading_review_section_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@color/black87"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="@color/yellow"
+                    android:maxEms="10"
+                    android:text="Why user chooose our services.."
+                    android:textAlignment="center"/>
+
+                <include layout="@layout/why_cleaning_section" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        layout="@layout/login_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nestedScrollView"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/service_item_image"
+        android:padding="@dimen/margin_5"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/margin_93"
+        android:layout_width="@dimen/margin_93"
+        android:scaleType="fitXY"
+        android:src="@drawable/btnbground" />
+
+    <TextView
+        android:id="@+id/servicename_tv"
+        android:fontFamily="sans-serif"
+        android:gravity="top"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_14"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:letterSpacing="10"
+        android:maxWidth="@dimen/margin_93"
+        android:text="Sofa Cleaning"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14sp" />
+    <View
+        android:layout_height="@dimen/margin_1"
+        android:layout_width="match_parent" />
+</LinearLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarViewAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:theme="@style/collapsabletoolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarViewAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize" />
+
+            <RelativeLayout
+                android:id="@+id/horrizontanBtnRelativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5">
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/previoushorizontalBtn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_margin="@dimen/margin_5"-->
+<!--                    android:background="@drawable/rounded_corner_grey_16"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                    android:padding="@dimen/margin_10"-->
+<!--                    android:textColor="@color/grey_txt_dark"-->
+<!--                    android:drawableTint="@color/grey_txt_dark"-->
+<!--                    android:drawablePadding="@dimen/margin_5"-->
+<!--                    android:drawableStart="@drawable/ic_keyboard_arrow_left_black"-->
+<!--                    android:text="Previous Service"-->
+<!--                    android:drawableLeft="@drawable/ic_keyboard_arrow_left_black" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/nexthorizontalBtn"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_margin="@dimen/margin_5"-->
+<!--                    android:background="@drawable/rounded_corner_grey_16"-->
+<!--                    android:clickable="true"-->
+<!--                    android:drawableEnd="@drawable/ic_keyboard_arrow_right_black"-->
+<!--                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black"-->
+<!--                    android:drawablePadding="@dimen/margin_5"-->
+<!--                    android:focusable="true"-->
+<!--                    android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:drawableTint="@color/grey_txt_dark"-->
+<!--                    android:text="Next Service"-->
+<!--                    android:textColor="@color/grey_txt_dark"/>-->
+                                <com.google.android.material.circularreveal.CircularRevealGridLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/horizontal_scrolling_btn_recyclerView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal" />
+
+                                </com.google.android.material.circularreveal.CircularRevealGridLayout>
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbarViewAll">
+
+            <LinearLayout
+                android:id="@+id/hardwaxLinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--hardwax-->
+
+
+                    <TextView
+                        android:padding="20dp"
+                        android:background="@color/grey_bg_light"
+                        android:id="@+id/hardWaxHeading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="Monthly Essentials"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hardWaxRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--end-->
+
+                <!--fruit wax-->
+
+                    <TextView
+                        android:padding="@dimen/margin_20"
+                        android:background="@color/grey_bg_light"
+                        android:layout_width="match_parent"
+                        android:id="@+id/fruitWaxHeading"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="Monthly Essentials"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ricaWaxRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!--end-->
+
+                    <TextView
+                        android:background="@color/grey_bg_light"
+                        android:padding="20dp"
+                        android:id="@+id/honeyWaxHeading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="Monthly Essentials"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/honeyWaxRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--end-->
+
+                <!--facial-->
+
+                    <TextView
+                        android:id="@+id/facialHeading"
+                        android:padding="@dimen/margin_20"
+                        android:background="@color/grey_bg_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="Monthly Essentials"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/facialRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--endf-->
+
+                <!--manicure-->
+
+                    <TextView
+                        android:id="@+id/manicure_and_pedicure_heading"
+                        android:padding="@dimen/margin_20"
+                        android:background="@color/grey_bg_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="Monthly Essentials"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/manicureRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--end-->
+
+                <!--hair care-->
+
+                    <TextView
+                        android:id="@+id/hairecareHeading"
+                        android:padding="@dimen/margin_20"
+                        android:background="@color/grey_bg_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="Monthly Essentials"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hairCareRecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--end=-->
+
+                <!--threading-->
+
+                    <TextView
+                        android:id="@+id/threadingHeading"
+                        android:padding="@dimen/margin_20"
+                        android:background="@color/grey_bg_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:text="Monthly Essentials"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/threadingRecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--end-->
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_4"
+        android:background="@drawable/border_rounded_black"
+        android:clickable="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/login_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_white"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_white"
+            android:drawablePadding="@dimen/margin_5"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif"
+            android:padding="@dimen/margin_10"
+            android:text="@string/login_signup"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</RelativeLayout>

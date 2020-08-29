@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <TextView
+        android:id="@+id/textView_projectname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:text="About Us"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_20sp" />
+
+    <ImageView
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginStart="@dimen/margin_25"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/call"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="40.0dip"
+        android:layout_height="30.0dip">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:background="@drawable/chat"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginLeft="@dimen/margin_24"
+            android:layout_marginTop="-2.0dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/circula_view_red" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_8sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:background="@drawable/help"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:visibility="gone" />
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">App Name</string>
+    <string name="get_otp_on_call">Get OTP On Call</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="login_otp_time_elapsed">Time elapsed.</string>
+    <string name="we_have_sent_you_otp">We have sent you an OTP</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="number_use">Your number will be used:</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="prompat">Please select country..</string>
+    <string name="filled_bullet">\u25CF</string>
+    <string name="referral">Referral code?</string>
+    <string name="referral_code">Referral code (if any)</string>
+    <string name="uc_icon_bullet">½</string>
+    <string name="login_signup">Login</string>
+    <string name="hi_nice_to_meet_you">Hi nice to meet you..</string>
+    <string name="your_current_location">your current location</string>
+    <string name="some_other_location">Some other location..</string>
+    <string name="skip_for_now">Skip For Now</string>
+    <string name="change">Change</string>
+    <string name="heading_service_area">AREA OF SERVICE</string>
+    <string name="optional_phone_number">Optional phone number..</string>
+    <string name="home">Home</string>
+    <string name="office">Office</string>
+    <string name="other">Other</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_location">Select Location</string>
+
+    <string name="uc_icon_map_greater_than">$</string>
+    <string name="heading_service_address">Heading Service Address</string>
+    <string name="hint_address">Address hint</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="hint_address_landmark">Address Landmark</string>
+    <!--country name array-->
+    <string-array name="spinnerItems">
+        <item>IND</item>
+        <item>AFG</item>
+        <item>AQ</item>
+        <item>AG</item>
+        <item>BTN</item>
+    </string-array>
+    <!--country name array end-->
+    <string name="aboutus">App Name helps you find the right service professionals for activities important to you. Whether you are looking to decorate your home, get candid pictures of your wedding, plan your kid’s birthday or get healthier, we are a sure shot destination for your service needs. Our vision is to use technology and smart processes to structure the highly unorganized services market in India. App Name aspires to make hiring a service professional as easy and straightforward as Amazon or Flipkart have made buying products.</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image">Image</string>
+    <string name="searchbar_hint">Search service here..</string>
+    <string name="reviews">Reviews</string>
+    <string name="urbanclap_insurance_protection_program">App Name Insurance Protection Program</string>
+    <string name="learn_more">Learn more</string>
+    <string name="skill_india_mesage">Our certified professionals workers.</string>
+    <string name="booking_services">Booking Services</string>
+    <string name="paying_for_services">Paying for services</string>
+    <string name="a_guide_to_urbanclap">A guide to App Name</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="my_profile">My Profile</string>
+    <string name="share_urbanclap">Share App Name </string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="download_uc_partner_app">Download App Name Client app</string>
+    <string name="about_urbanclap">About App Name </string>
+    <string name="payingQuery">Paying Service Query ?</string>
+    <string name="query_on_guide">Query on guide ?</string>
+
+    <string name="sofa_cleaning_bold"><b>Sofa Cleaning</b></string>
+
+    <string name="dummy_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet massa vitae tortor condimentum lacinia. Feugiat pretium nibh ipsum consequat nisl vel pretium. Viverra adipiscing at in tellus integer feugiat scelerisque. Dictum varius duis at consectetur lorem donec massa sapien. At augue eget arcu dictum varius duis at. Ac tortor dignissim convallis aenean. Quis eleifend quam adipiscing vitae proin sagittis. Aliquam sem fringilla ut morbi tincidunt augue interdum. Faucibus purus in massa tempor nec feugiat. Viverra aliquet eget sit amet tellus cras adipiscing enim. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Faucibus pulvinar elementum integer enim neque volutpat ac. Eget arcu dictum varius duis at consectetur lorem donec massa. Cursus sit amet dictum sit amet. Mattis aliquam faucibus purus in massa tempor. Id interdum velit laoreet id donec ultrices tincidunt. Vel orci porta non pulvinar neque. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.</string>
+    <string name="dummy_gurantee_txt_one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et sapien eu tortor venenatis accumsan sit amet quis elit. Quisque gravida eros sapien, sit amet finibus justo fringilla et.</string>
+
+
+    <string name="urbanclap_gurantee">App Name Gurantee:</string>
+    <string name="expert_message">All cleaning professional are background verified are trained</string>
+    <string name="professional_message">Cleaning is mechanized and done with professional cleaning solutions from Diversey</string>
+    <string name="cust_protect_message">Upto INR 10,000 of damage protection on each booking</string>
+    <string name="expert_clearners">Expert Clearners</string>
+    <string name="_4_7_out_of_5_stars">4.7 out of 5 stars</string>
+    <string name="average">Average rating of the service</string>
+    <string name="login">Login</string>
+    <string name="custom_toolbar">Custom Toolbar</string>
+    <string name="my_booking">My Booking</string>
+    <string name="dummy_rupee"><del>Rupee 855</del></string>
+    <string name="service_list_item">Service list item</string>
+    <string name="booking_txt">You can add a new service by the clicking <b>home icon on bottom navigation..</b></string>
+
+    <string name="quotedesc">Welcome! Where should we deliver to?</string>
+
+    <string name="map_key" translatable="false">AIzaSyAfASCG9lC88jokeWKGpRzf77iT3zvedEw</string>
+
+    <!--error messages-->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save</string>
+    <string name="age_error">Please fill the age and age must greater that 18 !!</string>
+    <string name="requirement_error">Please fill speciality !!</string>
+    <string name="mobile_number_already_exists">Please fill the mobile number and must be digit !!</string>
+    <string name="name_error">Please fill the name and numbers and special symbol not allowed !!</string>
+    <string name="email_id_already_exists">Please fill the email address !!</string>
+    <!--end-->
+</resources>

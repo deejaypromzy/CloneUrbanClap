@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <include
+        android:id="@+id/login_otp_item_1"
+        layout="@layout/login_otp_item_layout"
+        android:imeOptions="actionNext" />
+
+    <View
+        android:layout_width="@dimen/margin_19"
+        android:layout_height="1.0dip" />
+
+    <include
+        android:id="@+id/login_otp_item_2"
+        layout="@layout/login_otp_item_layout"
+        android:imeOptions="actionNext" />
+
+    <View
+        android:layout_width="@dimen/margin_19"
+        android:layout_height="1.0dip" />
+
+    <include
+        android:id="@+id/login_otp_item_3"
+        layout="@layout/login_otp_item_layout"
+        android:imeOptions="actionNext" />
+
+    <View
+        android:layout_width="@dimen/margin_19"
+        android:layout_height="1.0dip" />
+
+    <include
+        android:id="@+id/login_otp_item_4"
+        layout="@layout/login_otp_item_layout"
+        android:imeOptions="actionGo" />
+</LinearLayout>

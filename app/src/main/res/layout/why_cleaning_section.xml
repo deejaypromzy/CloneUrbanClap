@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_5"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_5"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading_why"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Why App Name cleaning service ?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textFontWeight="20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_6">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/itv_bullet_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filled_bullet"
+                    android:textSize="@dimen/text_size_24sp" />
+
+                <TextView
+                    android:id="@+id/tv_bullet_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:layout_marginLeft="@dimen/margin_4"
+                    android:layout_toEndOf="@id/itv_bullet_icon"
+                    android:layout_toRightOf="@id/itv_bullet_icon"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="7.0sp"
+                    android:paddingTop="@dimen/margin_6"
+                    android:text="A dummy points about the why ucc services.."
+                    android:textColor="@color/dark_light_grey"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_6">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/itv_bullet_icon0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filled_bullet"
+                    android:textSize="@dimen/text_size_24sp" />
+
+                <TextView
+                    android:id="@+id/tv_bullet_text0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:layout_marginLeft="@dimen/margin_4"
+                    android:layout_toEndOf="@id/itv_bullet_icon0"
+                    android:layout_toRightOf="@id/itv_bullet_icon0"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="7.0sp"
+                    android:paddingTop="@dimen/margin_6"
+                    android:text="A dummy points about the why ucc services.."
+                    android:textColor="@color/dark_light_grey"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_6">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/itv_bullet_icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filled_bullet"
+                    android:textSize="@dimen/text_size_24sp" />
+
+                <TextView
+                    android:id="@+id/tv_bullet_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:layout_marginLeft="@dimen/margin_4"
+                    android:layout_toEndOf="@id/itv_bullet_icon1"
+                    android:layout_toRightOf="@id/itv_bullet_icon1"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="7.0sp"
+                    android:paddingTop="@dimen/margin_6"
+                    android:text="A dummy points about the why ucc services.."
+                    android:textColor="@color/dark_light_grey"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_6">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/itv_bullet_icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filled_bullet"
+                    android:textSize="@dimen/text_size_24sp" />
+
+                <TextView
+                    android:id="@+id/tv_bullet_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_4"
+                    android:layout_marginLeft="@dimen/margin_4"
+                    android:layout_toEndOf="@id/itv_bullet_icon2"
+                    android:layout_toRightOf="@id/itv_bullet_icon2"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="7.0sp"
+                    android:paddingTop="@dimen/margin_6"
+                    android:text="A dummy points about the why ucc services.."
+                    android:textColor="@color/dark_light_grey"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

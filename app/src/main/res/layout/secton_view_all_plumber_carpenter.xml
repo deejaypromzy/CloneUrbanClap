@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_5"
+    android:background="@drawable/rounded_white_grey_border_4"
+    android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@color/windowBackground"
+            android:padding="@dimen/margin_5"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/serviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Shower Installation - Ceilling Mounted"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:padding="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:background="@color/grey_bg_light"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:drawablePadding="@dimen/margin_5"
+                android:drawableLeft="@drawable/rupee"
+                android:layout_margin="@dimen/margin_5"
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Rupee 119"
+                android:drawableStart="@drawable/rupee" />
+            <TextView
+                android:layout_margin="@dimen/margin_5"
+                android:id="@+id/bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" |"
+                android:layout_toRightOf="@id/txt_price"/>
+
+            <TextView
+                android:id="@+id/txt_price_off"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_toRightOf="@id/bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="128"/>
+            <TextView
+                android:layout_margin="@dimen/margin_5"
+                android:id="@+id/txt_off"
+                android:layout_toRightOf="@id/txt_price_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rupee off"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/btn_round_blue_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/minus_tv"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_remove_black"
+                    android:drawableTint="@color/light_royal_blue"
+                    android:padding="@dimen/margin_8"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/add_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_8"
+                    android:textColor="@color/light_royal_blue"
+                    android:drawableTint="@color/light_royal_blue"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_right_black"
+                    android:text="Details"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/plus_tv"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_add_black"
+                    android:drawableTint="@color/light_royal_blue"
+                    android:padding="@dimen/margin_8" />
+            </LinearLayout>
+
+        </RelativeLayout>
+</LinearLayout>

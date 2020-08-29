@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".About"
+    android:background="@color/windowBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/appbar_customer_support">
+
+        <include layout="@layout/custom_toolbar_layout"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_customer_support"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/margin_10"
+        android:layout_below="@id/appbar_customer_support"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="start|top"
+        >
+        <TextView
+            android:id="@+id/aboutUss"
+            android:textSize="@dimen/text_size_16sp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black87"
+            android:text="About App Name"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_txt_dark"
+            />
+        <TextView
+            android:id="@+id/shareUrban"
+            android:textSize="@dimen/text_size_16sp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black87"
+            android:text="@string/share_urbanclap"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_txt_dark"
+            />
+        <TextView
+            android:id="@+id/privacyPolicy"
+            android:textSize="@dimen/text_size_16sp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black87"
+            android:text="@string/privacy_policy"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_txt_dark"
+            />
+        <TextView
+            android:id="@+id/termsConditions"
+            android:textSize="@dimen/text_size_16sp"
+            android:background="@color/white"
+            android:padding="@dimen/margin_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black87"
+            android:text="@string/terms_and_conditions"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_txt_dark"
+            />
+    </LinearLayout>
+</RelativeLayout>

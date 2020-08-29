@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_screen_item_horizontal_card_ui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".PECActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/collapsabletoolbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/service_list_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:title="Title Services"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+
+            <RelativeLayout
+                android:id="@+id/relative_service_list_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/back_tvs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_arrow_back"
+                    android:drawableTint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Plumber"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/electronic_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/border_grey_light"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_screen_item_horizontal_card_imageview"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/electronic" />
+
+            <TextView
+                android:id="@+id/home_screen_item_horizontal_card_service_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_14"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="top"
+                android:lineSpacingExtra="2dp"
+                android:maxWidth="70dp"
+                android:maxLines="1"
+                android:text="Electronics"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <include layout="@layout/vertical_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plumber_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/border_grey_light"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_screen_item_horizontal_card_imageview1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plumber" />
+
+            <TextView
+                android:id="@+id/home_screen_item_horizontal_card_service_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_14"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="top"
+                android:lineSpacingExtra="2dp"
+                android:maxWidth="70dp"
+                android:maxLines="1"
+                android:text="Plumber"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <include layout="@layout/vertical_divider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/carpenter_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@drawable/border_grey_light"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_screen_item_horizontal_card_imageview2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carpenter" />
+
+            <TextView
+                android:id="@+id/home_screen_item_horizontal_card_service_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_14"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="top"
+                android:lineSpacingExtra="2dp"
+                android:maxWidth="70dp"
+                android:maxLines="1"
+                android:text="Carpenter"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <include layout="@layout/vertical_divider" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

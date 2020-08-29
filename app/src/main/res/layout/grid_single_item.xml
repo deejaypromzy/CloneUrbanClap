@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/margin_2"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:focusable="true"
+    android:background="@drawable/border_grey_light"
+    android:layout_marginBottom="@dimen/margin_5"
+    android:orientation="vertical"
+    >
+  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/beautyServiceLinearLayout"
+            android:gravity="center|top"
+            android:padding="@dimen/margin_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView_grid_section"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/facial"/>
+
+            <TextView
+                android:id="@+id/tv_grid_section"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:text="Monthly Essential"/>
+        </LinearLayout>
+       </LinearLayout>
+
+</LinearLayout>

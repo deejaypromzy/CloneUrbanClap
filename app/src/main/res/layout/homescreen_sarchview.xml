@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/include_searchView"
+    android:background="@drawable/searchbar_background"
+    android:elevation="@dimen/margin_4"
+    android:clipToPadding="true"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:padding="@dimen/margin_5"
+        android:textColor="@color/grey_txt"
+        android:drawableTint="@color/black"
+        android:drawableLeft="@drawable/ic_search_black"
+        android:textSize="@dimen/text_size_14sp" />
+
+    <TextView
+        android:id="@+id/header_search_bar_text"
+        android:textSize="@dimen/text_size_14sp"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_toRightOf="@id/searchBtn"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/searchbar_hint"
+        android:textColor="@color/grey_txt" />
+</RelativeLayout>

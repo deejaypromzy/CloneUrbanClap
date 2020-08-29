@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@color/grey_bg_light"
+    app:cardCornerRadius="@dimen/margin_5"
+    app:cardElevation="@dimen/margin_10">
+
+    <RelativeLayout
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/round_corner_active_slots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Service"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:id="@+id/what_r_u_tv1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Improves water quality and increase efficiency"
+            android:layout_below="@id/what_r_u_tv1"
+            android:id="@+id/what_r_u_tv1_desc"/>
+
+        <ImageView
+            android:padding="@dimen/margin_5"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@id/what_r_u_tv1"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

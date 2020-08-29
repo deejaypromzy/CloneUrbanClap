@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#ffff4081</color>
+    <color name="colorPrimary">#ff3f51b5</color>
+    <color name="colorPrimaryDark">#ff303f9f</color>
+
+    <color name="windowBackground">#ffffffff</color>
+    <color name="light_royal_alpha">#ffd6ddfc</color>
+    <color name="light_royal_blue">#ff304ffe</color>
+
+    <color name="primary_new">#252222</color>
+    <color name="primary">@color/primary_new</color>
+    <color name="primaryDark">#ff000000</color>
+    <color name="primaryDarker">@color/primaryDark</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="uc_black_87">#ff212121</color>
+    <color name="uc_black_54">#ff757575</color>
+    <color name="green_confirm">#ff8bc34a</color>
+    <color name="green_confirm_dark">@color/green_confirm</color>
+
+    <color name="grey_border_dark">#ffcccccc</color>
+    <color name="grey_active_slots">#ffe5e5e5</color>
+    <color name="disabled_color">#44000000</color>
+    <color name="disabled_text">#ffbdbdbd</color>
+    <color name="dull_blue">#ff85a3e0</color>
+    <color name="dull_white">#ffe0e0e0</color>
+    <color name="golden_round">#fff6a623</color>
+    <!--gray-color-code-start-->
+    <color name="grey_text">#ff6d6d6d</color>
+    <color name="grey_bd">#ffdbdbdb</color>
+    <color name="grey_txt">#ff666666</color>
+    <color name="grey_txt_dark">#ff616161</color>
+    <color name="grey_txt_darkerer">#ff444444</color>
+    <color name="grey_txt_darkest">#ff333333</color>
+    <color name="grey_txt_darkest_dark">#ff212121</color>
+    <color name="grey_border_light">#ffe0e0e0</color>
+    <color name="light_gray_divider">#ffe0e0e0</color>
+    <color name="grey_border">@color/grey_border_light</color>
+    <color name="dark_light_grey">#ffa0a0a0</color>
+    <color name="grey_txt_light">#ff999999</color>
+    <color name="grey_bg_light">#fff9f9f9</color>
+
+    <color name="grey_txt_mid_light">#ff757575</color>
+    <color name="text_grey_light">#ff9e9e9e</color>
+    <!--gray-color-code-end-->
+
+    <color name="card_shadow_1">#ffd4d4d4</color>
+    <!--start the black shades -->
+
+    <color name="black87">#de000000</color>
+    <color name="yellow">#FFE605</color>
+    <!--end the black shades -->
+
+    <color name="proceed_disable">#DEDEDE</color>
+    <color name="proceed_enable">#72D63A</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextDisable">#66FFFFFF</color>
+</resources>

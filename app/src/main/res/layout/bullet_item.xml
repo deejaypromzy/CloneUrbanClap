@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="@dimen/margin_6">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/itv_bullet_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filled_bullet"
+        android:textSize="@dimen/text_size_24sp" />
+
+    <TextView
+        android:text="A dummy points about the why App Name services.."
+        android:id="@+id/tv_bullet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_4"
+        android:layout_marginLeft="@dimen/margin_4"
+        android:layout_toEndOf="@id/itv_bullet_icon"
+        android:layout_toRightOf="@id/itv_bullet_icon"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="7.0sp"
+        android:paddingTop="@dimen/margin_6"
+        android:textColor="@color/dark_light_grey"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="normal" />
+</RelativeLayout>

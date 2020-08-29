@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_5"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/img_pec_service"
+            android:layout_alignParentStart="true"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/margin_180"
+            android:background="@color/grey_active_slots"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_margin="@dimen/margin_5"
+            android:fontFamily="sans-serif-medium"
+            android:layout_toRightOf="@id/img_pec_service"
+            android:id="@+id/txt_one_pec_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Service List For The Electrician Section"/>
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:padding="@dimen/margin_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20% Off"
+            android:background="@color/grey_bg_light"
+            android:layout_toRightOf="@id/img_pec_service"
+            android:layout_below="@id/txt_one_pec_service"
+            android:layout_margin="@dimen/margin_5"/>
+
+        <TextView
+            android:padding="@dimen/margin_5"
+            android:layout_margin="@dimen/margin_5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/txt_price"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/img_pec_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rupee 299"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_5"
+            android:elevation="@dimen/margin_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round_blue_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_remove_black"
+                android:drawableTint="@color/light_royal_blue"
+                android:padding="@dimen/margin_5"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/margin_2"
+                android:id="@+id/add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5"
+                android:text="ADD"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_add_black"
+                android:drawableTint="@color/light_royal_blue"
+                android:padding="@dimen/margin_5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

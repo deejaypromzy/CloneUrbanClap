@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/grey_bg_light"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fitsSystemWindows="true"
+        android:theme="@style/collapsabletoolbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_below="@id/appbar_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:id="@+id/details_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200"
+                android:src="@drawable/placeholder_drawable" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:padding="@dimen/margin_5"
+                android:layout_width="match_parent"
+                android:layout_below="@id/details_imageview"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:id="@+id/textInputLayout">
+
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What we use ?"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerVew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:padding="@dimen/margin_5"
+                android:layout_width="match_parent"
+                android:layout_below="@id/textInputLayout"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:id="@+id/textInputLayout1">
+
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Benefits"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerVew1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:padding="@dimen/margin_5"
+                android:layout_width="match_parent"
+                android:layout_below="@id/textInputLayout1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:id="@+id/textInputLayout2">
+
+
+                <TextView
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please Note"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerVew2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/login_button_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

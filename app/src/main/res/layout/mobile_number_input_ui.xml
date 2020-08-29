@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="48.0dip"
+    android:layout_margin="@dimen/margin_8"
+    android:background="@drawable/border_grey_light"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_country_code_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_country_flag"
+            android:layout_width="@dimen/margin_21"
+            android:layout_height="@dimen/margin_15"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_18"
+            android:layout_marginBottom="@dimen/margin_16" />
+
+
+        <Spinner
+            android:visibility="gone"
+            android:prompt="@string/prompat"
+            android:spinnerMode="dropdown"
+            android:entries="@array/spinnerItems"
+            android:id="@+id/tv_country_calling_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:background="@android:color/transparent"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingTop="@dimen/margin_14"
+            android:paddingBottom="@dimen/margin_14"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/itv_country_dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:textColor="@color/text_grey_light"
+            android:textSize="@dimen/text_size_24sp"
+           android:drawableEnd="@drawable/ic_arrow_drop_down_black"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black" />
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/margin_8"
+            android:background="@color/light_gray_divider" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mobile_number_text"
+        style="@style/login_edittext"
+        android:digits="\ 0123456789"
+        android:hint="Enter Your Mobile Number"
+        android:imeOptions="actionNext"
+        android:includeFontPadding="false"
+        android:inputType="phone"
+        android:maxEms="10"
+        android:maxLength="10"
+        android:paddingLeft="@dimen/margin_14"
+        android:paddingTop="@dimen/margin_14"
+        android:paddingRight="@dimen/margin_14"
+        android:paddingBottom="@dimen/margin_14" />
+</LinearLayout>
